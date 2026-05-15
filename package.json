@@ -1,0 +1,22 @@
+{
+  "name": "universalviewer-electron-cjs-example",
+  "version": "1.0.0",
+  "private": true,
+  "main": "dist/main.js",
+  "scripts": {
+    "build": "tsc --project tsconfig.json",
+    "start": "npm run build && electron .",
+    "package": "npm run build && electron-packager . universalviewer-electron-cjs-example --platform=win32 --arch=x64 --out=release --overwrite"
+  },
+  "dependencies": {
+    "electron": "^42.0.1",
+    "openseadragon": "4.0.0",
+    "universalviewer": "^4.3.0"
+  },
+  "devDependencies": {
+    "electron-packager": "^17.1.1",
+    "typescript": "^5.6.0",
+    "@types/node": "^20.14.0",
+    "@types/openseadragon": "^4.0.0"
+  }
+}
