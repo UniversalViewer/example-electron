@@ -10,7 +10,6 @@
   },
   "dependencies": {
     "electron": "^42.0.1",
-    "openseadragon": "4.0.0",
     "universalviewer": "^4.3.0"
   },
   "devDependencies": {
