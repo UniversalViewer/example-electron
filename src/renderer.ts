@@ -72,7 +72,8 @@ try {
   console.warn('OpenSeadragon alias failed:', error);
 }
 
-const manifestUrl = 'https://wellcomelibrary.org/iiif/b18035723/manifest';
+const params = new URLSearchParams(window.location.search);
+const manifestUrl = params.get('manifest') ?? 'https://wellcomelibrary.org/iiif/b18035723/manifest';
 
 window.addEventListener('DOMContentLoaded', () => {
   const uvModule = nodeRequire('universalviewer/dist/cjs/index.js');

@@ -16,6 +16,18 @@ npm install
 npm start
 ```
 
+To open a specific Universal Viewer manifest, pass it as a CLI argument:
+
+```bash
+npm start -- --manifest=https://example.org/iiif/manifest
+```
+
+or as the first positional argument:
+
+```bash
+npm start -- https://example.org/iiif/manifest
+```
+
 The TypeScript source files are in `src/`, and compiled output is written to `dist/` before Electron starts.
 
 ## Package
